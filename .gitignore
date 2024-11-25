@@ -1,3 +1,5 @@
 venv
 
 src/data/files/*
+
+src/**/__pycache__/*

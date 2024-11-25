@@ -22,6 +22,8 @@ def get_hybrid_by_id(id, app):
     result["title"] = df[df["job_id"].isin(result["job_id"].to_list())]["title"].values
     
     result["url"] = df[df["job_id"].isin(result["job_id"].to_list())]["job_posting_url"].values
+    
+    result["job_description"] = df[df["job_id"].isin(result["job_id"].to_list())]["job_description"].values
 
     result = result.sort_values(by="similarity_hybrid", ascending=False)
 

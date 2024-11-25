@@ -2,7 +2,6 @@ import pandas as pd
 
 def get_knn_by_id(id, model, df, vectorizer):
     query = df[df["job_id"] == id]["content"]
-    query = [query[1]]
 
     query_vector = vectorizer.transform(query)
 
