@@ -53,35 +53,39 @@ api
 **Create virtual env:**
 
 ```bash
-    virtualenv venv
+virtualenv venv
 ```
 
 **Activate virtual env:**
 
 ```bash
-    cd .\venv\Scripts\ && ./activate && cd ../..
+cd .\venv\Scripts\ && ./activate && cd ../..
 ```
 
 **Install dependences:**
 
 ```bash
-    pip install -r .\requirements.txt
+pip install -r .\requirements.txt
 ```
 
-## Get data fron collab
+## Get data from collab
 
-To get the data fron collab you have to chage the global config, you have to change the value of the variable "SAVE" to "True" and run all the notebook.
+**[collab notebook](https://colab.research.google.com/drive/1gotmC_PHOS9maDF6Dvr9bFTU5NniFg97?usp=sharing)**
+
+Create a copy of the notebook to run it.
+
+To get the data fron collab you have to chage the global config, you have to change the value of the variables "SAVE" al "TEST" to "True" and run all the notebook.
 
 After run the notebook will apear a new a file call "output.zip", you can download it and extract it. The files in the zip are the SR's models.
 
-After get the zip chage the variable "SAVE" to "False" again.
+After get the zip chage the variables "SAVE" and "TEST" to "False" again.
 
 Move that files to the directory "src/data/files".
 
 ## Run project
 
 ```bash
-    python src/index.py
+python src/index.py
 ```
 
 this process could last a long time.
